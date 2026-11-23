@@ -1,26 +1,31 @@
 # Songhyun Kim — AI & Data Portfolio
 
-Blue-themed responsive portfolio website for Kim Songhyun.
+A responsive multi-page portfolio website using the **Blue Professional** design direction.
 
-## Pages / Sections
-- About
-- AI-Generated Reports
-- Qualifications & Certifications
-- Activities
+## Pages
+- `index.html` — Home
+- `about.html` — About
+- `reports.html` — AI-Generated Reports
+- `certifications.html` — Qualifications & Certifications
+- `activities.html` — Activities
 
-## Features
-- Responsive layout for desktop and mobile
-- Anchor navigation with active section state
-- Live GitHub repository metadata for `HSC-Class02/SH_SKhynix`
-- Direct links to GitHub repository and published SK hynix dashboard
-- Single-file static site; no build step or dependency installation required
+## Design
+- Main page: deep blue / navy hero and white content cards
+- Subpages: pale sky-blue page headers and light backgrounds
+- Responsive navigation for desktop and mobile
+- Shared styles in `styles.css`; shared header/footer in `layout.js`
+
+## GitHub integration
+- Links to the GitHub organization and SK hynix DART project
+- Links to the published SK hynix dashboard
+- Uses the public GitHub REST API in the browser to display repository metadata and selected organization repositories
+- No API token is stored in this static website
 
 ## Publish with GitHub Pages
-1. Open this repository's **Settings → Pages**.
-2. Under **Build and deployment**, choose **Deploy from a branch**.
-3. Select branch **main** and folder **/(root)**, then Save.
-4. After GitHub finishes publishing, the site will be available at:
-   https://hsc-class02.github.io/ksh_portfolio/
+1. Open **Settings → Pages** in this repository.
+2. Under **Build and deployment**, select **GitHub Actions** as the source.
+3. The workflow in `.github/workflows/deploy.yml` will publish the site after a push to `main`.
+4. Expected URL: https://hsc-class02.github.io/ksh_portfolio/
 
-## Content to complete
-The CV attachment currently contains only the heading “입 사 지 원 서”. Add verified education, qualifications, LinkedIn URL, and further activity details when available. No unverified credentials are included.
+## Content accuracy
+The CV file previously supplied contained only the heading “입 사 지 원 서”. Therefore, no unverified LinkedIn URL, certificates, or education completion dates have been invented. Add confirmed information to the relevant HTML page when available.
